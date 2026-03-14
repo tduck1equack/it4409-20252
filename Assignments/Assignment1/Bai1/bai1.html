@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang thông tin lịch học</title>
+    <!-- Trái với yêu cầu không dùng CSS, CSS được thêm vào theo yêu cầu cụ thể của người dùng để cải thiện giao diện -->
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; color: #333; }
+        header, footer { background-color: #f8f9fa; padding: 15px; text-align: center; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #dee2e6; padding: 12px; text-align: left; }
+        th { background-color: #e9ecef; }
+        caption { font-size: 1.8em; margin-bottom: 15px; font-weight: bold; color: #2c3e50; }
+        .profile { display: flex; align-items: center; gap: 30px; margin: 30px 0; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .profile img { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid #dee2e6; }
+        .profile h2 { margin: 0 0 10px 0; color: #d32f2f; }
+        .profile h3 { margin: 0; color: #6c757d; font-weight: normal; }
+        .table-desc { font-style: italic; color: #555; margin-top: 15px; padding: 10px; background-color: #e3f2fd; border-left: 4px solid #2196f3; }
+    </style>
+</head>
+<body>
+
+    <!-- Thẻ header chứa tên trang / tiêu đề chính của tài liệu -->
+    <header>
+        <h1>Thông tin Sinh viên & Lịch học HUST</h1>
+    </header>
+
+    <main>
+        <!-- Section dùng để nhóm các thông tin cá nhân bao gồm ảnh đại diện, họ tên, và MSSV -->
+        <section class="profile">
+            <img src="chan_dung.jpg" alt="Ảnh chân dung Trần Trung Đức">
+            <div>
+                <h2>Họ và tên: Trần Trung Đức</h2>
+                <h3>MSSV: 20210210</h3>
+            </div>
+        </section>
+
+        <!-- Thẻ table để xây dựng bảng thời khóa biểu với cấu trúc ngữ nghĩa Thead, Tbody -->
+        <table>
+            <caption>Thời khóa biểu học kỳ này</caption>
+            <thead>
+                <tr>
+                    <th>Tên môn học</th>
+                    <th>Tên giảng viên</th>
+                    <th>Ngày giờ học</th>
+                    <th>Phòng học</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lập trình Web (IT4409)</td>
+                    <td>ThS. Nguyễn Văn A</td>
+                    <td>Thứ 3, 08:25 - 11:45</td>
+                    <td>D9-401</td>
+                </tr>
+                <tr>
+                    <td>An toàn thông tin (IT4060)</td>
+                    <td>TS. Trần Thị B</td>
+                    <td>Thứ 5, 12:30 - 15:50</td>
+                    <td>TC-301</td>
+                </tr>
+                <tr>
+                    <td>Phát triển phần mềm linh hoạt (IT3180)</td>
+                    <td>PGS.TS. Lê Văn C</td>
+                    <td>Thứ 6, 06:45 - 10:05</td>
+                    <td>B1-201</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Thẻ p dùng để chứa đoạn mô tả ngắn ở cuối bảng về cảm nhận đối với lịch học -->
+        <p class="table-desc">Lịch học kỳ này được sắp xếp khá hợp lý, giúp em có thời gian cân bằng giữa việc tiếp thu kiến thức chuyên ngành tại lab và tham gia các hoạt động ngoại khóa ở trường.</p>
+    </main>
+
+    <!-- Thẻ footer ở cuối trang, chứa thông tin MSSV và ngày tạo văn bản -->
+    <footer style="margin-top: 40px;">
+        <p>MSSV: 20210210 | Ngày tạo: 10/03/2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+Đối với trang thông tin lịch học, em đã áp dụng đầy đủ các thẻ Semantic HTML (HTML ngữ nghĩa) để xây dựng bố cục trang rõ ràng.
+Cụ thể, phần đầu trang được gói gọn bằng thẻ <header> chứa tiêu đề chính của trang.
+Trong nội dung chính của thẻ <main>, thông tin cá nhân và ảnh đại diện được nhóm lại bằng thẻ <section> hoặc <article>.
+Bảng thời khóa biểu được tạo dựng đầy đủ cấu trúc bằng <table>, cùng với <caption> để đặt tên tiêu đề cho bảng.
+Các dữ liệu bảng được thể hiện một cách có tổ chức thông qua thẻ tiêu đề nhóm <thead> và thân bảng <tbody>.
+Cuối cùng, em có đưa vào thẻ <p> dưới bảng để trình bày đoạn cảm nhận. 
+Dưới cùng trang là thẻ <footer> nơi chứa thông tin MSSV và ngày thiết kế web của em. Trái với quy định, em đã chèn CSS vào <style> theo mong muốn hiển thị tốt hơn từ yêu cầu của em.

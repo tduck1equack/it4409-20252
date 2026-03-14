@@ -1,0 +1,6 @@
+Ở bài tập tạo giao diện Google Search, em đã ứng dụng triệt để những thẻ Semantic HTML để thể hiện tính cấu trúc văn bản vững chắc.
+Phần menu với các liên kết (Gmail, Hình ảnh) nằm gọn bên phải màn hình được em bố trí bên trong thẻ <header> ở vị trí cao nhất.
+Nội dung cốt lõi của việc tìm kiếm được bao quanh bởi thẻ <main>. Ở giữa màn hình là thẻ <img> mang logo của Google.
+Quan trọng nhất là khu vực nhập ký tự được quản lý bởi thẻ <form> với cấu trúc gồm ô tìm kiếm <input> nhập text và nhóm 2 phím nhấn <button> để gửi lệnh tìm.
+Phần <footer> cuối cùng là nơi hiển thị thông tin chung, bao gồm đánh dấu về khu vực và MSSV của em theo đúng luật của bài.
+Đồng thời, mã nguồn cũng đính kèm CSS qua thẻ nội tuyến <style> trực tiếp để tuân theo sở thích giao diện hiển thị mà em yêu cầu tinh chỉnh trên bản web.

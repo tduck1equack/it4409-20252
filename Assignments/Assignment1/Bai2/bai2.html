@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <!-- Mặc dù đề có lưu ý không sử dụng CSS, phần định dạng này được thêm vào nhằm tái tạo thành công giao diện thật của Google theo yêu cầu đặc biệt. -->
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; height: 100vh; margin: 0; }
+        .top-nav { display: flex; justify-content: flex-end; align-items: center; padding: 15px 20px; gap: 15px; font-size: 14px; }
+        .top-nav a { text-decoration: none; color: #1f1f1f; }
+        .top-nav a:hover { text-decoration: underline; }
+        .avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid #ddd; }
+        
+        .main-content { flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .logo { width: 272px; height: auto; margin-bottom: 30px; }
+        
+        .search-area { width: 100%; max-width: 584px; padding: 0 20px; box-sizing: border-box; }
+        .search-box-container { display: flex; align-items: center; border: 1px solid #dfe1e5; border-radius: 24px; padding: 0 14px; margin-bottom: 28px; }
+        .search-box-container:hover, .search-box-container:focus-within { box-shadow: 0 1px 6px rgba(32,33,36,.28); border-color: rgba(223,225,229,0); }
+        .search-icon { color: #9aa0a6; padding-right: 12px; }
+        .search-input { flex-grow: 1; padding: 12px 0; border: none; font-size: 16px; outline: none; }
+        
+        .buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .btn { background-color: #f8f9fa; border: 1px solid #f8f9fa; border-radius: 4px; color: #3c4043; cursor: pointer; font-size: 14px; padding: 0 16px; line-height: 27px; height: 36px; min-width: 54px; text-align: center; }
+        .btn:hover { box-shadow: 0 1px 1px rgba(0,0,0,.1); background-color: #f8f9fa; border: 1px solid #dadce0; color: #202124; }
+        
+        footer { background-color: #f2f2f2; color: #70757a; font-size: 14px; display: flex; flex-direction: column; }
+        .footer-top { padding: 15px 30px; border-bottom: 1px solid #dadce0; }
+        .footer-bottom { padding: 15px 30px; display: flex; justify-content: space-between; }
+        @media (max-width: 600px) {
+            .footer-bottom { flex-direction: column; text-align: center; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thẻ header được sử dụng ở vị trí trên cùng để chứa nhóm thanh điều hướng (Gmail, Images) -->
+    <header class="top-nav">
+        <a href="https://mail.google.com">Gmail</a>
+        <a href="https://images.google.com">Hình ảnh</a>
+        <img class="avatar" src="chan_dung.jpg" alt="Avatar Tài khoản">
+    </header>
+
+    <!-- Thẻ main gói trọn vẹn toàn bộ công cụ tìm kiếm, xác định cấu trúc thân của tài liệu -->
+    <main class="main-content">
+        <img class="logo" src="google_logo.png" alt="Google Logo">
+        
+        <div class="search-area">
+            <!-- Thẻ form dùng để khai báo một biểu mẫu, chứa input nhập liệu và các button submit dữ liệu mô phỏng việc truy vấn -->
+            <form action="https://www.google.com/search" method="GET">
+                <div class="search-box-container">
+                    <span class="search-icon">🔍</span>
+                    <input class="search-input" type="text" name="q" title="Tìm kiếm" required autofocus autocomplete="off">
+                </div>
+                <div class="buttons">
+                    <button class="btn" type="submit">Tìm trên Google</button>
+                    <button class="btn" type="button" onclick="window.location.href='https://doodles.google/'">Xem trang đầu tiên tìm được</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Thẻ footer ở góc dưới màn hình bổ sung thông tin quốc gia, MSSV và ngày tạo theo tiêu chí bài làm -->
+    <footer>
+        <div class="footer-top">Việt Nam</div>
+        <div class="footer-bottom">
+            <div>MSSV: 20210210 | Tên: Trần Trung Đức | Ngày tạo: 10/03/2026</div>
+        </div>
+    </footer>
+
+</body>
+</html>
